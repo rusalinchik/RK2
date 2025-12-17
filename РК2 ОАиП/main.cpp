@@ -8,9 +8,6 @@
 #include <numeric>
 #include <limits>
 
-// =======================
-// Базовый класс FoodItem
-// =======================
 class FoodItem {
 protected:
     std::string name;
@@ -94,7 +91,6 @@ public:
     }
 };
 
-// ===== Функции =====
 void loadFromFile(const std::string& filename,
     std::vector<std::unique_ptr<FoodItem>>& items)
 {
